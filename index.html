@@ -627,7 +627,7 @@ Beyond technology, I’m a painter and sculptor with a deep interest in mathemat
             <h2>Featured AI Projects</h2>
             <p class="about-quote" style="font-size:1.05em; margin-top:-5px;">
                 Explore my AI, Generative AI, data science, machine/deep learning, and software projects.
-                <br><a href="https://github.com/taniakapoor98?tab=repositories" target="_blank" rel="noopener noreferrer"></a>
+                <br><a href="https://github.com/zeinabdastmozd" target="_blank" rel="noopener noreferrer"></a>
             </p>
             <div class="projects-grid">
                 <a class="project" href="https://github.com/zeinabdastmozd/llms-cultural-differences-chatbots" target="_blank" rel="noopener noreferrer">
@@ -1097,26 +1097,9 @@ Beyond technology, I’m a painter and sculptor with a deep interest in mathemat
         observer.observe(item);
     });
 
-	projects.forEach(project => {
-	project.addEventListener('click', () => {
-		const modalId = project.getAttribute('data-modal');
-		const modal = document.getElementById(modalId);
-		if (modal) {
-			modal.style.display = 'flex';
-			document.body.style.overflow = 'hidden'; /* Lock background scrolling */
-		}
-	});
-	});
+	
 
-	closeButtons.forEach(button => {
-	button.addEventListener('click', () => {
-		const modal = button.closest('.modal');
-		if (modal) {
-			modal.style.display = 'none';
-			document.body.style.overflow = 'auto'; /* Unlock background scrolling */
-		}
-	});
-	});
+
 
 	window.addEventListener('click', (e) => {
 	if (e.target.classList.contains('modal')) {
